@@ -1,0 +1,76 @@
+{
+  "name": "sequelize-guard-alpha",
+  "version": "0.2.1",
+  "description": "An authorization library for Node.js based on Sequelize",
+  "main": "./index.js",
+  "scripts": {
+    "debug": "node ./tests/runner.js --inspect-brk=9229",
+    "test": "mocha ./tests/runner.js --reporter spec",
+    "cover": "nyc npm test && nyc report --reporter=lcov --reporter=text-summary",
+    "coverall": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "url": "https://github.com/amirrivand/sequelize-guard.git",
+    "type": "git"
+  },
+  "displayName": "SequelizeGuardAlpha",
+  "maintainers": [{
+    "email": "a_rivand@yahoo.com",
+    "name": "Amir Mohammad Rivand",
+    "url": "https://github.com/amirrivand"
+  }],
+  "prettier": {
+    "arrowParens": "always",
+    "bracketSpacing": true,
+    "useTabs": true,
+    "tabWidth": 4
+  },
+  "types": "./index.d.ts",
+  "keywords": [
+    "sequelize-guard",
+    "sequelize-guard-alpha",
+    "guard",
+    "sequelize",
+    "authorize",
+    "authorization",
+    "guard-sequelize",
+    "role",
+    "permission",
+    "acl",
+    "sequelize-acl"
+  ],
+  "author": {
+    "email": "vpankaj1998official@gmail.com",
+    "name": "Pankaj Vaghela"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amirrivand/sequelize-guard/issues"
+  },
+  "homepage": "https://github.com/amirrivand/sequelize-guard",
+  "engines": {
+    "node": ">=4.2.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coveralls": "^3.1.0",
+    "esdoc": "^1.1.0",
+    "esdoc-standard-plugin": "^1.0.0",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-jsdoc": "^46.4.6",
+    "eslint-plugin-prettier": "^5.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^7.1.2",
+    "nyc": "^15.0.1",
+    "prettier": "^3.0.1",
+    "prettier-plugin-jsdoc": "^1.0.1",
+    "sqlite3": "^4.2.0"
+  },
+  "dependencies": {
+    "faker": "^4.1.0",
+    "lodash": "^4.17.21",
+    "node-cache": "^5.1.2",
+    "sequelize": "^6.32.1"
+  }
+}
