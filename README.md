@@ -194,7 +194,6 @@ Please Note:
     sync: true,
     debug: false,
     userModel: null,
-    userPk : 'id', //User Primary Key
     safeGuardDeletes : true,
     userCache: true,
     userCacheTime: 60, // 60
@@ -208,7 +207,6 @@ Please Note:
 - **sync**: _(bool | true)_, if set to true, database tables will be created without migrations
 - **debug**: _(bool | false)_, print database queries to console.
 - **userModel**: _(Sequelize Model | null)_, custom used model you want to use, instead of default User Model.
-- **userPk** : _(string | 'id' )_, Primary key for User Model, in case your custom model has primaryKey other than 'id'.
 - **safeGuardDeletes** : _(bool | true)_, if set to true, role or permissions can't be deleted as long as they are associated with any other data. To remove you must break all other associations (to be tested).
 - **userCache** : _(bool | true)_, roles of user will be cached, this will allow faster permission resolution and less database connections.
 - **userCacheTime** : _(int | 60)_, time for which roles of user will be cached (in seconds), this number should be inversely proportional to your user traffic.

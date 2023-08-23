@@ -75,7 +75,7 @@ module.exports = (SequelizeGuard) => {
   SequelizeGuard.prototype.getUserRoles = async function (user) {
     let _guard = this;
 
-    const cacheKey = `user_${user[_guard._options.userPk]}`;
+    const cacheKey = `user_${user[_guard._options.UserModel.primaryKeyAttribute]}`;
 
     return _guard.getUserCache().then((cache) => {
       let cacheRoles;

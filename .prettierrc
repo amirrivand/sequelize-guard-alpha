@@ -1,4 +1,10 @@
 {
-  "tabWidth": 2,
-  "useTabs": true
+  "tabWidth": 4,
+  "useTabs": true,
+  "arrowParens": "always",
+  "bracketSameLine": true,
+  "bracketSpacing": true,
+  "htmlWhitespaceSensitivity": "strict",
+  "semi": true,
+  "singleQuote": true
 }

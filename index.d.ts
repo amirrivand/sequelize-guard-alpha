@@ -22,7 +22,6 @@ interface SequelizeGuardOptions<TModel extends ModelType = typeof _GuardUser> {
   sync?: boolean;
   debug?: boolean;
   UserModel?: TModel;
-  userPk?: string;
   safeGuardDeletes?: boolean;
   userCache?: boolean;
   userCacheTtl?: number;
