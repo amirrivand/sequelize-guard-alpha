@@ -1,6 +1,6 @@
 {
   "name": "sequelize-guard-alpha",
-  "version": "0.2.1",
+  "version": "0.2.3",
   "description": "An authorization library for Node.js based on Sequelize",
   "main": "./index.js",
   "scripts": {
